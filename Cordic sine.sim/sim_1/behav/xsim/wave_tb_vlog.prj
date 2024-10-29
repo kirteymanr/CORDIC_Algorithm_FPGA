@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Cordic sine.srcs/sources_1/new/sine.v" \
+"../../../../Cordic sine.srcs/sources_1/new/sine_gen.v" \
+"../../../../Cordic sine.srcs/sources_1/new/sine_wave_gen.v" \
+"../../../../Cordic sine.srcs/sim_1/new/wave_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
